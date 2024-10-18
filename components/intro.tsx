@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { BsArrowRight, BsLinkedin } from "react-icons/bs"
-import { FaGithubSquare } from "react-icons/fa"
-import { HiDownload } from "react-icons/hi"
-import { useSectionInView } from "@/lib/hooks"
-import { useActiveSectionContext } from "@/context/active-section-context"
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { FaGithubSquare } from "react-icons/fa";
+import { HiDownload } from "react-icons/hi";
+import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5)
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -30,8 +30,8 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/pic.jpg"
-              alt="Jorge"
+              src="/pic.JPG"
+              alt="Adeka"
               width="192"
               height="192"
               quality="95"
@@ -83,8 +83,8 @@ export default function Intro() {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
-            setActiveSection("Contact")
-            setTimeOfLastClick(Date.now())
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
           }}
         >
           Contact me here&nbsp;
@@ -117,5 +117,5 @@ export default function Intro() {
         </a>
       </motion.div>
     </section>
-  )
+  );
 }
