@@ -1,10 +1,9 @@
-import React from "react"
-import { CgWorkAlt } from "react-icons/cg"
-import { FaReact } from "react-icons/fa"
-import { LuGraduationCap } from "react-icons/lu"
-import restaurantFinder from "@/public/Restaurant Finder.png"
-// import ticketImg from "@/public/ticket.png"
-// import sellitImg from "@/public/sellit.png"
+import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
+import restaurantFinder from "@/public/Restaurant Finder.png";
+import oopSchoolLibrary from "@/public/oop_school_library.png";
 
 export const links = [
   {
@@ -31,7 +30,7 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
-] as const
+] as const;
 
 export const experiencesData = [
   {
@@ -58,7 +57,7 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: "2024 - present",
   },
-] as const
+] as const;
 
 export const projectsData = [
   {
@@ -69,7 +68,15 @@ export const projectsData = [
     imageUrl: restaurantFinder,
     link: "https://github.com/zeff96/restaurants_ratings",
   },
-] as const
+  {
+    title: "School Library",
+    description:
+      "Opp School App is a Ruby application designed to manage library records, including tracking books and their borrowers. Users can easily add, view, and manage books, as well as monitor who has borrowed them, facilitating efficient library management.",
+    tags: ["ruby", "json", "fs"],
+    imageUrl: oopSchoolLibrary,
+    link: "https://github.com/zeff96/opp_school_library",
+  },
+] as const;
 
 export const skillsData = [
   "HTML5",
@@ -93,4 +100,4 @@ export const skillsData = [
   "PostgreSQL",
   "Framer Motion",
   "SQL Server",
-] as const
+] as const;
